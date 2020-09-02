@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #da552f;
+    --whiteColor: #fff;
+}
+
+
+.products-list {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.products-list article {
+    background-color: var(--whiteColor);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    transition: background-color;
+}
+
+
+.products-list article p {
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.products-list article a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition:  all 0.2s;
+}
+
+.products-list article a:hover {
+    background-color: var(--primary-color);
+    color: var(--whiteColor);
+}
+
+.products-list .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.products-list .actions button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--whiteColor);
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.products-list .actions button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.products-list .actions button:hover[disabled] {
+   opacity: 0.5;
+   cursor: not-allowed;
+}
+
+
+.products-list .actions button:hover {
+    opacity: 0.9;
+}
+
+
+

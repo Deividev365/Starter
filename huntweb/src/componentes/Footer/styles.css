@@ -1,0 +1,25 @@
+header#main-footer {
+    width: 100%;
+    height: 100px;
+    background-color: #473d3a;
+    
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+}
+
+header#main-footer a {
+  color: #ece1e1;
+
+}
+
+header#main-footer a:hover {
+  color: #080808;
+
+}
